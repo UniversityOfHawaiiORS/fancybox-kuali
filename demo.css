@@ -1,0 +1,30 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+#fancybox-outer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+}
+
+#fancybox-outer  .uif-header   {
+
+}
+
+#fancybox-outer  .uif-header .uif-headerText   {
+    background: @gray-lighter;
+    padding: 12px;
+    margin: 0px;
+    font-size: 24px;
+}
+
+#fancybox-outer .uif-cssGridGroup, #fancybox-outer .uif-tableCollectionSection {
+    padding: 15px
+}
+
+#fancybox-outer .uif-footer {
+    margin-bottom: 0px
+}

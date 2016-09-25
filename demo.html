@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="src/jquery.fancybox-kuali-1.4.0.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="lib/jquery-1.8.3.js"></script>
+    <script src="lib/jquery.easing-1.3.pack.js"></script>
+    <script src="lib/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script src="src/jquery.fancybox-kuali-1.4.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a#inline").fancybox({
+                autoScale: true,
+                transitionIn: 'fade',
+                transitionOut: 'fade',
+                speedIn: 200,
+                speedOut: 200,
+                hideOnContentClick: false,
+                padding: 0
+            });
+            $("a#single_image").fancybox({
+                autoScale: true,
+                transitionIn: 'fade',
+                transitionOut: 'fade',
+                speedIn: 200,
+                speedOut: 200,
+                hideOnContentClick: false,
+                padding: 0
+            });
+        });
+    </script>
+</head>
+<body>
+
+<ul>
+    <li>
+        <a id="inline" href="#data">Click to show inline</a>
+    </li>
+    <li>
+        <a id="single_image" href="image_big.jpg">Click to show image</a>
+    </li>
+</ul>
+
+
+<div style="display:none"><div id="data">Hello, I am a lightbox with <b>HTML</b> content.</div></div>
+
+</body>
+</html>
+
