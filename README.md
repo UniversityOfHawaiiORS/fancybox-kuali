@@ -20,6 +20,12 @@ CSS class names from Fancybox 2:
   * Replace any references to `.fancybox-wrap` with `#fancybox-wrap`
   * Replace any references to `.fancybox-frame` with `#fancybox-frame`
   * Replace any references to `.fancybox-inner` with `#fancybox-content`
+* Fancybox 1 works best with "content-box" as the box sizing model. If
+your application sets CSS `box-sizing` to "border-box" by default
+(which will be the case if using Bootstrap) then you need to change the
+fancybox using a snippet as follows: ```#fancybox-wrap {
+  box-sizing: content-box;
+}```
 * If you are opening the fancybox manually in your code, then you will
 want to look at the options on both fancybox 1 and fancybox 2 and change
 them as needed.
